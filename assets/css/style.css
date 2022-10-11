@@ -1,0 +1,91 @@
+body {
+  width: 100%;
+  background: #f5f5f7;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1em 0;
+  width: 90%;
+  max-width: 1250px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  height: 3em;
+  padding: 0 3em;
+}
+.navbar__logo {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: rgba(37, 37, 37, 0.863);
+}
+span {
+  font-style: italic;
+  color: peru;
+  font-weight: 780;
+}
+.navbar__brands__item {
+  position: relative;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  font-weight: 780;
+  color: rgba(37, 37, 37, 0.863);
+}
+
+.brands__items {
+  cursor: pointer;
+  top: 3.01em;
+  right: 0;
+  width: max-content;
+  position: absolute;
+  background: white;
+  display: none;
+  padding: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.navbar__brands__item:hover .brands__items {
+  display: block;
+}
+.title {
+  padding: 1em 0;
+  font-size: 2em;
+  color: slategrey;
+}
+.phones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1em;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 2px solid white;
+  background: white;
+  cursor: pointer;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.phone img {
+  object-fit: contain;
+  width: 100%;
+  height: 350px;
+  transition: all 0.4s;
+}
+
+.phone img:hover {
+  transform: scale(1.2);
+}
